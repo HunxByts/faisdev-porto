@@ -1,16 +1,17 @@
-     body {
-          font-family: 'Poppins', sans-serif;
-          background: linear-gradient(135deg, #f7f9fc, #eef1f7);
-          color: #2d2d2d;
-        }
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f7f9fc, #eef1f7);
+      color: #2d2d2d;
+      overflow-x: hidden;
+    }
     .navbar {
       backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 12px;
-      margin: 10px auto;
-      max-width: 1200px;
+      background: rgba(255, 255, 255, 0.9);
       padding: 10px 20px;
       transition: all 0.3s ease-in-out;
+      width: 100%;       /* full width biar stabil */
+      margin: 0;         /* jangan pakai margin auto */
+      border-radius: 0;  /* biar gak nyedot pas mobile */   
     }
     .navbar-brand {
       font-family: 'Archivo', sans-serif;
@@ -25,6 +26,14 @@
     .navbar-nav .nav-link:hover {
       color: #0d6efd !important;
     }
+
+    @media (min-width: 992px) {
+    .navbar {
+      border-radius: 12px;
+      max-width: 1200px;  /* batasi lebar di desktop */
+      margin: 10px auto;  /* center hanya di desktop */
+    }
+  }
     .btn-project {
       background: #0d6efd;
       color: #fff;
@@ -128,15 +137,16 @@
     }
 
     .logo-slider {
-    overflow: hidden;
-    position: relative;
-    background: transparent;
+     overflow: hidden;
+     position: relative;
+     background: transparent;
+     width: 100%;
     }
 
     .logo-track {
     display: flex;
-    width: max-content;
-    animation: scroll 70s linear infinite;
+    width: calc(200px * 6); 
+    animation: scroll 25s linear infinite;
     }
 
     .logo-card {
@@ -146,28 +156,31 @@
         filter: alpha(opacity=60);
     flex: 0 0 auto;
     width: 200px;
-    height: 180px;
+    height: 140px;
     margin: 0 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s;
-    }
-    .logo-card:hover {
-    transform: scale(1.1);
-    }
-    .logo-card img {
-    max-width: 100px;
-    max-height: 80px;
-    object-fit: contain;
-    }
-/* sliderr coi */
-    @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    filter: grayscale(100%);
+    opacity: 0.6;
     }
 
-    .logo-slider.paused .logo-track {
-    animation-play-state: paused;
+    .logo-card:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    opacity: 1;
     }
+
+    .logo-card img {
+  max-width: 100px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* fix gpt buat layar */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
