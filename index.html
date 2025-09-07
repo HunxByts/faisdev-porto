@@ -1,377 +1,1073 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>_- FAIS DEV -_</title>
-    <!--
-        AOS ANIMATED
-    -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fais Dev Portfolio</title>
 
-    <!--
-        FONT GOOGLE Archivo dan Poppins
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <!--FONT AWESOME
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--
-        INI CSS BOOSTRAP
-    -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!--
-        INI CSS GW YAK GES!
-    -->
-    <link rel="stylesheet" href="app.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+
+  <!--Anu CSS ku-->
+  <link rel="stylesheet" href="app.css">
+
 </head>
 <body>
-    <!--
-        BUAT NAVBAR DULU
-    -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-trasnparent">
-        <div class="container">
-            <a class="navbar-brand text-uppercase" href="#home">Fais<strong>DEV</strong></a>
-            <button class="navbar-toggler cs-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars-staggered button-navbar fs-2"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#skill">My Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#bughunting">Bug Bounty</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contac">Contact</a>
-                    </li>
-                </ul>
-                <a href="https://blog-k1llu.netlify.app/" target="_blank"><button type="button" class="btn btn-project shadow-sm">My Blog</button></a>
-            </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Fais<span class="text-dark">Dev</span></a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <i class="fa-solid fa-bars-staggered button-navbar fs-2" style="color: #0d6efd;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skill">My Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bughunting">Bug Bounty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contac">Contact</a></li>
+        </ul>
+        <a href="https://blog-k1llu.netlify.app/" target="_blank">
+          <button class="btn btn-project shadow">My Blog</button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero and about -->
+  <section class="awal" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h1>Alo, saya <span class="text-primary">Faiz Ahmad Habibi</span></h1>
+          <p class="kenal">
+            Anak lulusan SMK jurusan Teknik Komputer dan Jaringan (TKJ), yang sangat suka dengan dunia Cyber Security dan Devops, di dunia IT saya banyak belajar tentang hal - hal yang unik dan menarik, seperti (Networking, Programming, Web Development, Linux, Cloud Computing, Cyber Security dll). Saya juga seorang Bug Hunter di beberapa website lokal (Indonesia) dan luar negeri. Selain itu saya juga suka membuat project tools sederhana untuk keperluan Cyber Security.
+          </p>
+          <p><i class="fa-solid fa-pen me-2"></i><strong>Writer: Fais — 26/11/2023</strong></p>
         </div>
-    </nav>
-    <!--
-        NAVBAR SELESAI
-    -->
-
-    <!--
-    CONTENT HOME
-    -->
-    <section class="awal">
-        <div class="container" id="home">
-            <div class="jumbotron">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="home">
-                            <h1 class="fs-1 fw-bold">HAI, SAYA <strong>FAIZ AHMAD HABIBI</strong></h1>
-                            <p class="kenal">Seorang IT Pentester atau Security Researcher dan DevOps. Saya berasal dari Kutai Kartanegara, Kalimantan Timur. Saya Lulusan SMK Negeri 1 Tenggarong jurusan TKJ ( Teknik Komputer dan Jaringan ).</p>
-                            <p class="penulis"><i class="fa-solid fa-pen  tulis"></i><strong> Writer by Fais 26/11/2023</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-start gmbr">
-                        <img src="/asset/img/hcr.png" alt="ker" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6 text-center" data-aos="fade-left">
+          <img src="/asset/img/hcr.png" alt="Profile">
         </div>
-    </section>
-    <!--
-        HOME SELESAI
-    -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L40,202.7C80,181,160,139,240,138.7C320,139,400,181,480,197.3C560,213,640,203,720,170.7C800,139,880,85,960,58.7C1040,32,1120,32,1200,26.7C1280,21,1360,11,1400,5.3L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-    <!--
-        CONTENT ABOUT
-    -->
-    <!-- <section class="kedua" id="skill">
-        <div class="container">
-            <h1 class="fs-1 fw-bold text-center" data-aos="fade-down" data-aos-duration="400">My skill</h1>
-            <p class="text-center" data-aos="fade-down" data-aos-duration="300">Pada bagian ini akan menjelaskan apa saja skill - skill yang saya punya selama saya belajar baik di sekolah atau di rumah</p>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-code fs-1 fw-bold m-4" data-aos="fade-down"  data-aos-duration="500" data-aos-delay="400"></i><p data-aos="fade-up" data-aos-delay="200">Saya menguasai bahasa pemerograman Python, C++, bash dan PHP. seperti pembuatan Web Project sederhana OSINT Tools dan Recon Tools, serta project Web caffe.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-network-wired fs-1 fw-bold m-4" data-aos="fade-down"  data-aos-duration="500" data-aos-delay="400"></i><p data-aos="fade-up" data-aos-delay="200">Saya menguasai Networking seperti OSI Layer, IP Address, IP Subnetting/Class, Server Configuration, Configuration Router Mikrotik, Switch dan Access Point.  </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-bug-slash fs-1 fw-bold m-4" data-aos="fade-down"  data-aos-duration="500" data-aos-delay="400"></i><p data-aos="fade-up" data-aos-delay="200">Saya menguasai Keamanan Siber, pada kategori ini saya mengambil jenis Security Researcher atau dengan sebutan peneliti keamanan pada web aplikasi.</p>
-                </div>
-            </div>
-            
-            <h1 class="fs-1 fw-bold text-center pt-4" data-aos="fade-down" data-aos-duration="400">Skill Programing</h1>
-            <p class="text-center" data-aos="fade-down" data-aos-duration="300">Pada bagian ini berisi saya skill programing apa yang saya kuasai</p>
-            <div class="container2">
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col-12 col-md-6 mb-3">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-brands fa-python"></i> Python</h4>
-                        <!-- <div class="progress">
-                            <div data-aos="fade-right" data-aos-duration="300" class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                        </div> -->
-                    <!-- </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-solid fa-c"></i> ++</h4>
-                        
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-solid fa-terminal"></i> Bash</h4>
-                       
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-brands fa-php"></i> PHP</h4>
-                       
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills aink-->
+  <section class="kedua py-5" id="skill">
+    <div class="container">
+      <h1 class="text-center">My Skills</h1>
+      <p class="text-center">Pada bagian ini berisi beberapa keahlihan yang saya kusai di dunia IT</p>
+      <div class="row g-4">
+        <div class="col-md-4 d-flex" data-aos="zoom-in-up">
+          <div class="skill-box text-center h-100">
+            <i class="fa-solid fa-code fs-1"></i>
+            <p>Saya menguasai bahasa Python, C++, Bash, dan PHP (Laravel) untuk project web, OSINT, Recon Tools, serta aplikasi sederhana.</p>
+          </div>
         </div>
-    </section> --> 
-    <section class="kedua" id="skill">
-        <div class="container">
-            <h1 class="fs-1 fw-bold text-center" data-aos="fade-down" data-aos-duration="400">My Skill</h1>
-            <p class="text-center" data-aos="fade-down" data-aos-duration="300">Pada bagian ini akan menjelaskan apa saja skill - skill yang saya punya selama saya belajar baik di sekolah atau di rumah</p>
-            <div class="row">
-                <div class="col-md-4 text-center skill-box">
-                    <i class="fa-solid fa-code fs-1 fw-bold m-4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="400"></i>
-                    <p data-aos="fade-up" data-aos-delay="200">Saya menguasai bahasa pemrograman Python, C++, bash, dan PHP. seperti pembuatan Web Project sederhana OSINT Tools dan Recon Tools, serta project Web caffe.</p>
-                </div>
-                <div class="col-md-4 text-center skill-box">
-                    <i class="fa-solid fa-network-wired fs-1 fw-bold m-4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="400"></i>
-                    <p data-aos="fade-up" data-aos-delay="200">Saya menguasai Networking seperti OSI Layer, IP Address, IP Subnetting/Class, Server Configuration, Configuration Router Mikrotik, Switch dan Access Point.</p>
-                </div>
-                <div class="col-md-4 text-center skill-box">
-                    <i class="fa-solid fa-bug-slash fs-1 fw-bold m-4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="400"></i>
-                    <p data-aos="fade-up" data-aos-delay="200">Saya menguasai Keamanan Siber, pada kategori ini saya mengambil jenis Security Researcher atau dengan sebutan peneliti keamanan pada web aplikasi.</p>
-                </div>
-            </div>
-    
-            <h1 class="fs-1 fw-bold text-center pt-4" data-aos="fade-down" data-aos-duration="400">Skill Programming</h1>
-            <p class="text-center" data-aos="fade-down" data-aos-duration="300">Pada bagian ini berisi saya skill programming apa yang saya kuasai</p>
-            <div class="container2">
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col-12 col-md-6 mb-3 skill-box">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-brands fa-python"></i> Python</h4>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3 skill-box">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-solid fa-c"></i> ++</h4>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3 skill-box">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-solid fa-terminal"></i> Bash</h4>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3 skill-box">
-                        <h4 data-aos="fade-down" data-aos-duration="300"><i class="fa-brands fa-php"></i> PHP</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <h1 class="fs-1 fw-bold text-center pt-4" data-aos="fade-down" data-aos-duration="400">Project Hasil Ngoding</h1>
-            <p class="text-center" data-aos="fade-down" data-aos-duration="300">Pada bagian ini berisi project-project hasil ngoding yang sudah saya upload ke GitHub.</p>
-
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4 pt-5 text-center">
-                    <!-- Card 1 -->
-                    <div class="col" data-aos="flip-left" data-aos-duration="400" data-aos-delay="200">
-                        <div class="card card-custom">
-                            <img src="/asset/img/bn.png" class="card-img-top" alt="bug hunting">
-                            <div class="card-body shadow-lg">
-                                <h5 class="card-title fs-5 fw-bold">GhostTrack</h5>
-                                <p class="card-text">Merupakan tools <strong>OSINT</strong> untuk melacak dan mengetahui informasi lokasi seseorang serta nomor HP. <strong>Note! tools ini hanya tools kidies</strong></p>
-                                <a href="https://github.com/HunxByts/GhostTrack" class="btn btn-lg btn-project3b shadow-lg">Cek disini</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col" data-aos="flip-left" data-aos-duration="400" data-aos-delay="300">
-                        <div class="card card-custom">
-                            <img src="/asset/img/Go-Hash.png" class="card-img-top" alt="bug hunting">
-                            <div class="card-body shadow-lg">
-                                <h5 class="card-title fs-5 fw-bold">Go-Hash</h5>
-                                <p class="card-text">Merupakan tools untuk mengidentifikasi sebuah hash menggunakan API free dari (hashes.com), tools ini dapat mengidentifikasi dan menganalisis hashing.</p>
-                                <a href="https://github.com/HunxByts/Go-Hash" class="btn btn-lg btn-project3b shadow-lg">Cek disini</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col" data-aos="flip-left" data-aos-duration="400" data-aos-delay="400">
-                        <div class="card card-custom">
-                            <img src="/asset/img/sbn1.png" class="card-img-top" alt="bug hunting">
-                            <div class="card-body shadow-lg">
-                                <h5 class="card-title fs-5 fw-bold">Subneting-IP</h5>
-                                <p class="card-text">Merupakan tools untuk menghitung subnet ip, khusus IP Address kelas C, lalu tools ini memiliki fitur AI untuk menghitung pembagian client dengan memecah prefix.</p>
-                                <a href="https://github.com/HunxByts/Subneting-IP?tab=readme-ov-file" class="btn btn-lg btn-project3b shadow-lg">Cek disini</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="col-md-4 d-flex">
+          <div class="skill-box text-center h-100" data-aos="zoom-in-down" data-aos-delay="150">
+            <i class="fa-solid fa-network-wired fs-1"></i>
+            <p>Saya menguasai pengetahuan pada OSI Layer, IP Address, IP Subnetting, Mikrotik Konfigurasi, dan Server Konfigurasi</p>
+          </div>
         </div>
-    </section>
-    
-    <!--
-        ABOUT SELESAI
-    -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L40,202.7C80,181,160,139,240,138.7C320,139,400,181,480,197.3C560,213,640,203,720,170.7C800,139,880,85,960,58.7C1040,32,1120,32,1200,26.7C1280,21,1360,11,1400,5.3L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-
-    <!--
-        Bug Hunting
-    -->
-    <!--
-    <section>
-        <div class="container ketiga" id="bughunting" >
-            <h1 class="fs-1 fw-bold text-center">Bug Bounty</h1>
-            <p class="text-center">Pada bagian ini, saya mendapatkan reward dari Security Researcher dalam mencari celah keamanan pada sebuah website, yang pertama dai BPK CSIRT, Mediun Kab CSIRT dan Universitas Brawijaya CSIRT </p>
-            <div class="text-center">
-                <a href="https://github.com/HunxByts/SubDump"><button type="button" class="btn btn-lg btn-project3 shadow-lg">My Tools</button></a>
-                <span style="margin: 0 10px;"></span>
-                <a href="https://github.com/HunxByts/Subneting-IP"><button type="button" class="btn btn-lg btn-project3a shadow-lg">My Project</button></a>
-            </div>
-            <div  id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active gmbr srt">
-                        <img src="/asset/img/bpk.png" class="d-block w-100 img-fluid" alt="bughunting">
-                    </div>
-                    <div class="carousel-item gmbr srt">
-                        <img src="/asset/img/mdn.png" class="d-block w-100 img-fluid" alt="bughunting">
-                    </div>
-                    <div class="carousel-item srt gmbr">
-                        <img src="/asset/img/srt.png" class="d-block w-100 img-fluid" alt="bughunting">
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4 d-flex">
+          <div class="skill-box text-center h-100" data-aos="zoom-in-down" data-aos-delay="300">
+            <i class="fa-solid fa-bug-slash fs-1"></i>
+            <p>Saya Mendalami Cyber Security sebagai Offensive Security, dari skill ini saya mendapatkan hobi baru saya yaitu Bug Hunter.</p>
+          </div>
         </div>
-    </section>
-    -->
-    <section class="ketiga" id="bughunting">
-        <div class="container text-center">
-            <h1 class="fs1 fw-bold" data-aos="fade-down"  data-aos-duration="400">Pencapaian Bug Hunting Bounty</h1>
-            <p data-aos="fade-down"  data-aos-duration="300">Pada bagian ini, saya mendapatkan reward dari Security Researcher ( Bug Hunting Bounty ) dalam mencari celah keamanan pada suatu website pemerintah, perusahaan, Universitas dan luar negeri </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects gabut -->
+  <section class="py-5 bg-light" id="projects">
+    <div class="container">
+      <h1 class="text-center">Project Cyber Security Tools</h1>
+      <p class="text-center">Pada bagian ini saya telah membuat beberapa tools sederhana untuk kebutuhan belajar mengenai Cyber Security, IP Subneting dll</p>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card card-custom shadow-sm h-100 d-flex flex-column">
+            <img src="/asset/img/bn.png" class="card-img-top"  style="height:250px; object-fit:cover;" alt="GhostTrack">
+            <div class="card-body">
+              <h5 class="fw-bold">GhostTrack</h5>
+              <p>Tools OSINT untuk melacak informasi lokasi dan nomor HP. (Note: tools ini hanya untuk pembelajaran).</p>
+              <div class="d-flex justify-content-center"><a href="https://github.com/HunxByts/GhostTrack" class="btn btn-project3b"><i class="fa-solid fa-tags me-2"></i>Cek Repositoryku</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="card card-custom shadow-sm h-100 d-flex flex-column">
+            <img src="/asset/img/Go-Hash.png" class="card-img-top"  style="height:250px; object-fit:cover;" alt="Go-Hash">
+            <div class="card-body">
+              <h5 class="fw-bold">Go-Hash</h5>
+              <p>Tools identifikasi hash menggunakan API gratis dari hashes.com untuk analisis hashing seperti (MD5, MD4, SH1,SH256).</p>
+             <div class="d-flex justify-content-center"><a href="https://github.com/HunxByts/Go-Hash" class="btn btn-project3b"><i class="fa-solid fa-tags me-2"></i> Cek Repositoryku</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card card-custom shadow-sm h-100 d-flex flex-column">
+            <img src="/asset/img/sbn1.png" class="card-img-top"  style="height:250px; object-fit:cover;" alt="Subneting-IP">
+            <div class="card-body">
+              <h5 class="fw-bold">Subneting-IP</h5>
+              <p>Tools untuk menghitung subnet IP kelas C, termasuk fitur AI untuk pembagian client prefix.</p>
+              <div class="d-flex justify-content-center"><a href="https://github.com/HunxByts/Subneting-IP" class="btn btn-project3b"><i class="fa-solid fa-tags me-2"></i>Cek Repositoryku</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bug Hunter-->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Acheivement Bug Hunter</h2>
+    <p>Pada bagian ini berisi tentang pencapaian saya dalam dunia <strong>Bug Hunter</strong> di lokal (Indonesia) dan luar negeri. Dari Bug Hunter saya belajar banyak hal mengenai celah keamanan yang ada pada web aplikasi, seperti (Broken Access Control, Cross Site Scripting, SQL Injection dll). berikut hasil pencapaian saya dalam berburu celah keamanan.</p>
+    <div class="text-start">
+        <h5 class="fw-bold f-2"><i class="fa-solid fa-trophy text-primary"></i> Local Hunting</h5>
+        <p>Berikut daftar hunting di beberapa website Indonesia : </p>
+        <ul class="list-grou list-group-flush">
+          <li class="list-group-item" data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>Universitas Brawijaya (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Universitas Amikom (Sertifikat Apresiasi + Bounty)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Universita UNAIR (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Universitas ITB (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi UNY (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi UNJAYA (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi Teknokrat (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>DPR RI (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>BMKG RI (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>BPK RI (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>BRIN RI (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Badan Pangan RI (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Komdigi RI (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT Perhutani BUMN (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>PT Nindya Karya BUMN (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT Transjakarta (Sertifikat + Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Malang Kota (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi Riau (Sertifikat Apresiasi + Bounty)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Temanggung (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"  ></i>
+            <span>Provinsi Bali (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Pekalongan Kota (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi Yogyakarta (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Banjarmasin (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Bekasi Kota (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Madiun (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Kulonprogo (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Gowa (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Banyuwangi (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Kabupaten Bantul (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi Yogyakarta (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>DKI Jakarta (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Provinsi Jawa Timur (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>Megelang kota (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT TimKoding (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT Gamelab Indonesia (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT Ekuid (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item"data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT Eduwork (Sertifikat Apresiasi)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2" ></i>
+            <span>PT BGR Logistik Indonesia (Merchandise)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>PT KG Media (Sertifikat Apresiasi)</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="text-start">
+        <h5 class="fw-bold f-2"><i class="fa-solid fa-trophy text-primary"></i> Global Hunting</h5>
+        <p>Berikut daftar hunting di beberapa website luar : </p>
+        <ul class="list-grou list-group-flush">
+          <li class="list-group-item" data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>NASA (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>UNESCO (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-left" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>BASF (Hall Of Fame Apresiasi)</span>
+          </li>
+          <li class="list-group-item" data-aos="fade-right" data-aos-delay="150">
+            <i class="fa-solid fa-bug text-primary me-2"></i>
+            <span>Spectro Cloud (Hall Of Fame Apresiasi)</span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="mt-4">Untuk lebih detailnya bisa cek sertifikat apresiasi dan bounty yang saya dapatkan dari hobi saya menjadi Bug hunter dibawah : </p>
+    <div class="logo-slider">
+      <div class="logo-track">
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat1">
+          <img src="asset/img/Logo_Universitas_Brawijaya.svg.png" alt="UB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat2">
+          <img src="asset/img/AMIKOM_LOGO.svg.png" alt="Amikom">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat3">
+          <img src="asset/img/Logo-Branding-UNAIR-biru.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat4">
+          <img src="asset/img/Logo_Institut_Teknologi_Bandung.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat5">
+          <img src="asset/img/Emblem_of_Yogyakarta_State_University.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat6">
+          <img src="asset/img/Universitas_Jenderal_Achmad_Yani_Yogyakarta.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat7">
+          <img src="asset/img/Logo_Resmi_Universitas_Bina_Bangsa_Getsempena_(UBBG).png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat8">
+          <img src="asset/img/UNIVERSITASTEKNOKRAT.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat9">
+          <img src="asset/img/Coat_of_arms_of_the_People's_Representative_Council_of_Indonesia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat10">
+          <img src="asset/img/Logo_BMKG_(2010).png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat11">
+          <img src="asset/img/BPK_insignia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat12">
+          <img src="asset/img/Main_Logo_of_National_Research_and_Innovation_Agency_of_Indonesia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat13">
+          <img src="asset/img/NFA_badan_pangan_nasional.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat14">
+          <img src="asset/img/Logo_Kementerian_Komunikasi_dan_Digital_Republik_Indonesia_(2024).svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat15">
+          <img src="asset/img/Logo_of_Indonesian_Broadcasting_Commission.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat16">
+          <img src="asset/img/Perhutani_logo.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat17">
+          <img src="asset/img/Logo_Nindya_HR_MOD-01.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat18">
+          <img src="asset/img/Logo_Transjakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat19">
+          <img src="asset/img/Seal_of_Malang_City_(Logo_Kota_Malang).svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat20">
+          <img src="asset/img/Coat_of_arms_of_Riau.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat21">
+          <img src="asset/img/Seal_of_Temanggung_Regency.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat22">
+          <img src="asset/img/Official_seal_of_the_Province_of_Bali.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat23">
+          <img src="asset/img/Coat_of_arms_of_the_City_of_Pekalongan.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat24">
+          <img src="asset/img/Banjarmasin_Logo.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat25">
+          <img src="asset/img/Coat_of_arms_of_Bekasi.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat26">
+          <img src="asset/img/Kulonprogo_Seal.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat27">
+          <img src="asset/img/New_Coat_of_Arms_of_Gowa.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat28">
+          <img src="asset/img/Banyuwangi_Regency_coat_of_arms.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat29">
+          <img src="asset/img/Seal_of_Bantul_Regency.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat30">
+          <img src="asset/img/Coat_of_arms_of_Yogyakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat31">
+          <img src="asset/img/Coat_of_arms_of_Jakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat32">
+          <img src="asset/img/Coat_of_arms_of_East_Java.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat33">
+          <img src="asset/img/Seal_of_the_City_of_Magelang.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat34">
+          <img src="asset/img/timkoding.jfif" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat35">
+          <img src="asset/img/gamelabb.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat36">
+          <img src="asset/img/ekuid.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat37">
+          <img src="asset/img/eduworkid.jfif" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat38">
+          <img src="asset/img/Logo_BGR_Logistik_Indonesia.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat39">
+          <img src="asset/img/KOMPAS_TV_(2017).svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat40">
+          <img src="asset/img/madiun.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat41">
+          <img src="asset/img/kledoo.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat42">
+          <img src="asset/img/nasa.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat43">
+          <img src="asset/img/basf.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat44">
+          <img src="asset/img/unesco.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat45">
+          <img src="asset/img/spectro.png" alt="ITB">
         </div>
 
-        <div class="container py-5 ketiga">
-            <!-- Sertifikat Apresiasi -->
-            <div class="mb-5">
-                <h3 class="fw-bold">Sertifikat Apresiasi</h3>
-                <ul>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Brawijaya </a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Amikom</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Pekalongan Kota</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Temanggung Kabupaten</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Provinsi Riau</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Malang Kota</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Insitut Teknologi Bandung</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Dewan Perwakilan Rakyat Republik Indonesia ( DPR )</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Temanggung Kabupaten</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Provinsi Jogja</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Purbolinggo Kota</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Yogyakarta State University ( UNY )</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Perum Perhutani</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Banjarmasin</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Magelang Kota</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Kementrian Komunikasi dan Digital Republik Indonesia ( KOMINFO RI )</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Bekasi Kota</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari PT Nindya Karya</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Banyuwangi Kabupaten</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Indonesia Agency For Meteorology, Climatology, and Geophysics ( BMKG )</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Kulonprogo Kabupaten</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Bantul Kabupaten</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Provinsi DKI Jakarta</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Provinsi Jawa Timur</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Bina Bangsa Getsempena</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Universitas Jendral Achmad Yani Yogyakarta ( UNJAYA )</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Always Ngoding</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Gemlab Indonesia</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari PT EkuID</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari Provinsi Bali</a></li>
-                    <li><a href="#">Sertifikat Apresiasi dari badan Riset dan Inovasi Nasional ( BRIN RI )</a></li>
-                </ul>
-            </div>
-        
-            <!-- Hall of Fame -->
-            <div>
-                <h3 class="fw-bold">Hall of Fame ( HoF )</h3>
-                <ul>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari National Aeronautics and Space Administration ( NASA )</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Perum Perhutani</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Badan Pemeriksaan Keuangan Republik Indonesia ( BPK )</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Madiun Kabupaten</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Universitas Teknokrat Indonesia</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Always Ngoding</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari BASF Company</a></li>
-                    <li><a href="#">Mendapat Hall of Fame ( HoF ) dari Spectro Cloud Company</a></li>
-                </ul>
-            </div>
-        </div>        
 
-
-        
-    </section>
-    <!--
-        Bug Hunting selesai
-    -->
-    
-    <!--Footer
-    -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,192C480,203,600,149,720,154.7C840,160,960,224,1080,240C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-
-    <div class="keempat" id="contac">
-        <div class="container">
-            <footer class="text-center">
-                <h5 class="fs-4 fw-bold contac">My Menu</h5>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#skill" class="nav-link px-2 text-muted">My Skill</a></li>
-                    <li class="nav-item"><a href="#bughunting "class="nav-link px-2 text-muted">Bug Bounty</a></li>
-                    <li class="nav-item"><a href="#contac" class="nav-link px-2 text-muted">Contact</a></li>
-                </ul>
-                <div class="contac">
-                    <h5 class="fs-4 fw-bold">My Contact</h5>
-                    <ul class="nav justify-content-center gap-4 border-bottom pb-3 mb-3">
-                        <li><a href="https://www.instagram.com/k1zz010__"><i class="fa-brands fa-instagram px-2 text-muted insta"></i></a></li>
-                        <li><a href="https://github.com/HunxByts"><i class="fa-brands fa-github px-2 text-muted github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/faiz-ahmad-habibi-62a7182a8/"><i class="fa-brands fa-linkedin px-2 text-muted linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <p class="text-center text-muted signature">&copy; 2024 By FaisDev</p>
-            </footer>
+        <!-- Duplikat lagi lah untuk looping -->
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat1">
+          <img src="asset/img/Logo_Universitas_Brawijaya.svg.png" alt="UB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat2">
+          <img src="asset/img/AMIKOM_LOGO.svg.png" alt="Amikom">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat3">
+          <img src="asset/img/Logo-Branding-UNAIR-biru.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat4">
+          <img src="asset/img/Logo_Institut_Teknologi_Bandung.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat5">
+          <img src="asset/img/Emblem_of_Yogyakarta_State_University.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat6">
+          <img src="asset/img/Universitas_Jenderal_Achmad_Yani_Yogyakarta.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat7">
+          <img src="asset/img/Logo_Resmi_Universitas_Bina_Bangsa_Getsempena_(UBBG).png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat8">
+          <img src="asset/img/UNIVERSITASTEKNOKRAT.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat9">
+          <img src="asset/img/Coat_of_arms_of_the_People's_Representative_Council_of_Indonesia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat10">
+          <img src="asset/img/Logo_BMKG_(2010).png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat11">
+          <img src="asset/img/BPK_insignia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat12">
+          <img src="asset/img/Main_Logo_of_National_Research_and_Innovation_Agency_of_Indonesia.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat13">
+          <img src="asset/img/NFA_badan_pangan_nasional.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat14">
+          <img src="asset/img/Logo_Kementerian_Komunikasi_dan_Digital_Republik_Indonesia_(2024).svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat15">
+          <img src="asset/img/Logo_of_Indonesian_Broadcasting_Commission.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat16">
+          <img src="asset/img/Perhutani_logo.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat17">
+          <img src="asset/img/Logo_Nindya_HR_MOD-01.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat18">
+          <img src="asset/img/Logo_Transjakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat19">
+          <img src="asset/img/Seal_of_Malang_City_(Logo_Kota_Malang).svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat20">
+          <img src="asset/img/Coat_of_arms_of_Riau.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat21">
+          <img src="asset/img/Seal_of_Temanggung_Regency.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat22">
+          <img src="asset/img/Official_seal_of_the_Province_of_Bali.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat23">
+          <img src="asset/img/Coat_of_arms_of_the_City_of_Pekalongan.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat24">
+          <img src="asset/img/Banjarmasin_Logo.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat25">
+          <img src="asset/img/Coat_of_arms_of_Bekasi.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat26">
+          <img src="asset/img/Kulonprogo_Seal.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat27">
+          <img src="asset/img/New_Coat_of_Arms_of_Gowa.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat28">
+          <img src="asset/img/Banyuwangi_Regency_coat_of_arms.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat29">
+          <img src="asset/img/Seal_of_Bantul_Regency.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat30">
+          <img src="asset/img/Coat_of_arms_of_Yogyakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat31">
+          <img src="asset/img/Coat_of_arms_of_Jakarta.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat32">
+          <img src="asset/img/Coat_of_arms_of_East_Java.svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat33">
+          <img src="asset/img/Seal_of_the_City_of_Magelang.svg.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat34">
+          <img src="asset/img/timkoding.jfif" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat35">
+          <img src="asset/img/gamelabb.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat36">
+          <img src="asset/img/ekuid.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat37">
+          <img src="asset/img/eduworkid.jfif" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat38">
+          <img src="asset/img/Logo_BGR_Logistik_Indonesia.png" alt="ITB">
+        </div>
+         <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat39">
+          <img src="asset/img/KOMPAS_TV_(2017).svg.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat40">
+          <img src="asset/img/madiun.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat41">
+          <img src="asset/img/kledoo.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat42">
+          <img src="asset/img/nasa.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat43">
+          <img src="asset/img/basf.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat44">
+          <img src="asset/img/unesco.png" alt="ITB">
+        </div>
+        <div class="logo-card" data-bs-toggle="modal" data-bs-target="#sertifikat45">
+          <img src="asset/img/spectro.png" alt="ITB">
         </div>
     </div>
-    <!--
-        FOOTER SELESAI
-    -->
+  </div>
+</section>
 
-    <!--
-        JS AOS
-    -->
+<!-- Modal Sertifikat 1 -->
+<div class="modal fade" id="sertifikat1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/ub-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/amikom-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/unair-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!--
-        INI JS BOOSTRAP
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/itb-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/uny-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/unjaya-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat7" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/ubgg-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
-                $('nav').addClass('navbar-putih');
-            }
-            else{
-                $('nav').removeClass('navbar-putih');
-            }
-        })
-    </script>
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat8" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/tekno-hof.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat9" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/dpr-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat10" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bmkg-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat11" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bpk-hof.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat12" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/brin-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat13" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bdnpangan-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat14" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/komdigi-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat15" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/kpi-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat16" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/perhutani-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat17" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/nk-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat18" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/trans-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat19" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/malang-ser.png" class="img-fluid" alt="Sertifikat UB">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sertifikat 2 -->
+<div class="modal fade" id="sertifikat20" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/riau-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat21" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/temanggung-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat22" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bali-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat23" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/pekalongan-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat24" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/banjarmas-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat25" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bekasi-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat26" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/kulon-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat27" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/gowa-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat28" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/banyuwangi-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat29" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bantul-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat30" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/jogja-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat31" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/jkt-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat32" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/jatim-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat33" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/magelang-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat34" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/timkode-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat35" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/gamelab-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat36" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/ekuid-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat37" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/eduwork-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat38" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/bgr-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat39" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/kompas-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat40" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/madiun-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat41" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/kledo-hof.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat42" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/nasa-hof.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat43" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/basf-hof.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat44" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/unesco-ser.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sertifikat45" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="asset/spectro-hof.png" class="img-fluid" alt="Sertifikat Amikom">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.querySelectorAll('.logo-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.querySelector('.logo-slider').classList.add('paused');
+  });
+});
+
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('hidden.bs.modal', () => {
+    document.querySelector('.logo-slider').classList.remove('paused');
+  });
+});
+</script>
+
+
+
+  <!-- Footer ku -->
+  <footer id="contac">
+    <div class="container text-center">
+      <h5 class="fw-bold">My Menu</h5>
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item"><a href="/#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/#skill" class="nav-link">My Skill</a></li>
+        <li class="nav-item"><a href="/#bughunting" class="nav-link">Bug Bounty</a></li>
+        <li class="nav-item"><a href="/#contac" class="nav-link">Contact</a></li>
+      </ul>
+      <h5 class="fw-bold">My Contact</h5>
+      <div class="d-flex justify-content-center gap-4 mb-3">
+        <a href="https://www.instagram.com/k1zz010__"><i class="fa-brands fa-instagram fs-4"></i></a>
+        <a href="https://github.com/HunxByts"><i class="fa-brands fa-github fs-4"></i></a>
+        <a href="https://www.linkedin.com/in/faiz-ahmad-habibi-62a7182a8/"><i class="fa-brands fa-linkedin fs-4"></i></a>
+      </div>
+      <p class="signature">&copy; 2025 FaisDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>AOS.init();</script>
 </body>
 </html>
