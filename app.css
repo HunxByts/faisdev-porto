@@ -144,9 +144,9 @@
     }
 
     .logo-track {
-    display: flex;
-    width: calc(200px * 6); 
-    animation: scroll 25s linear infinite;
+     display: flex;
+      width: max-content;
+      animation: scroll 300s linear infinite;
     }
 
     .logo-card {
