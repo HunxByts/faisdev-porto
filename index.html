@@ -19,6 +19,9 @@
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
   <!--Anu CSS ku-->
   <link rel="stylesheet" href="app.css">
 
@@ -44,7 +47,7 @@
     </div>
   </nav>
 
-
+<div id="particles-js"></div>
 
   <!-- Hero and about -->
   <section class="awal" id="home">
@@ -1025,15 +1028,58 @@
   </div>
 </div>
 
-
+<!-- buat slider ama partikel-->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector('.logo-track');
   track.innerHTML += track.innerHTML + track.innerHTML; // jadi 3x isi
 });
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#0d6efd" },
+    "shape": { "type": "circle" },
+    "opacity": {
+      "value": 0.5,
+      "random": false
+    },
+    "size": {
+      "value": 3,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#0d6efd",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    },
+    "modes": {
+      "repulse": { "distance": 100 },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
 </script>
-
-
 
   <!-- Footer ku -->
   <footer id="contac">
