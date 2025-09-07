@@ -30,8 +30,8 @@
     @media (min-width: 992px) {
     .navbar {
       border-radius: 12px;
-      max-width: 1200px;  /* batasi lebar di desktop */
-      margin: 10px auto;  /* center hanya di desktop */
+      max-width: 1200px;  
+      margin: 10px auto;  
     }
   }
     .btn-project {
@@ -48,6 +48,7 @@
     }
     .awal {
       padding: 120px 0 80px;
+      display: flex;
     }
     .awal h1 {
       font-weight: 700;
@@ -184,4 +185,18 @@
 @keyframes scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.awal .container {
+  position: relative;
+  z-index: 1; 
 }
